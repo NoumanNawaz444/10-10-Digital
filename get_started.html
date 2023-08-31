@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started 10/10-digital</title>
+    <link rel="stylesheet"
+        href="./Assets/font/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css">
+    <link rel="stylesheet" href="./Assets/css/get_started.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <a class="logo" href="./index.html">
+            <img src="./Assets/Images/Logo.png" alt="">
+        </a>
+    </nav>
+
+    <div class="main_form">
+        <div class="heading">
+            <h1>Let's get started</h1>
+            <div class="spans">
+                <span class="s_1" id="s_1">1</span>
+                <span class="s_2" id="s_2">2</span>
+                <span class="s_3" id="s_3">3</span>
+            </div>
+        </div>
+
+        <div class="card" id="card_one">
+            <h1 style="font-weight: 500;">What do you want to Sell?</h1>
+            <input type="text" id="sellInput" placeholder="What do you sell?" required>
+            <button class="continue" id="continue_one">Continue</button>
+            <button class="back" id="back"><a href="./index.html">Back</a></button>
+        </div>
+
+        <div class="card" id="card_two">
+            <h1 style="font-weight: 500;">What budget do you have?</h1>
+            <select id="budgetSelect" required>
+                <option value="What budget do you have?">What budget do you have?</option>
+                <option value="0-9 Peoples">0-9 Peoples</option>
+                <option value="10-99 Peoples">10-99 Peoples</option>
+                <option value="100-999 Peoples">100-999 Peoples</option>
+            </select>
+            <button class="continue" id="continue_two">Continue</button>
+            <button class="back" id="back_two">Back</button>
+        </div>
+
+        <div class="card" id="card_three">
+            <h1 style="font-weight: 500;">Enter Your Details Below</h1>
+            <form id="form">
+                <input type="text" id="nameInput" placeholder="Name" required>
+                <input type="email" id="emailInput" placeholder="Email" required>
+                <input type="text" id="phoneInput" placeholder="Phone Number" required>
+                <input type="text" id="locationInput" placeholder="Where are you based" required class="l_two">
+                <input type="text" id="postalCodeInput" placeholder="Postal Code" required class="l_two">
+                <a href="./thanku_page.html" class="continue" >Submit</a>
+
+            </form>
+
+            <button class="back" id="back_three">Back</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="./Assets/js/get_started.js"></script>
+
+</html>

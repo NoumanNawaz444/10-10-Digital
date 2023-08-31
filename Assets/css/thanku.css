@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ClashDisplay-Variable';
+}
+
+.nav_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.nav_hero nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.nav_hero nav .logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav_hero nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_hero nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_hero nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    opacity: 1;
+    position: relative;
+}
+
+.nav_hero nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav_hero nav button {
+    height: 40px;
+    width: 130px;
+    padding: 0 12px;
+    background: linear-gradient(to bottom , #952B7A , #E81F6C);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.nav_hero nav button a {
+    text-decoration: none;
+    color: white;
+}
+.nav_hero nav .ham{
+    height: 50px;
+    width: auto;
+    display: none;
+}
+.nav_hero nav .ham img{
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+}
+.nav_hero nav ul .cross_white{
+    display: none;
+}
+
+
+
+@media screen and (max-width:760px) {
+
+    .nav_hero nav .get_started_nav{
+        display: none;
+    }
+    .nav_hero nav .ham{
+        display: block;
+    }
+    .nav_hero nav ul{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: flex;
+        background: linear-gradient(to top , #952B7A , #E81F6C);
+        left: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        padding-bottom: 250px;
+        top: -100%;
+        transition: 0.5s;
+        z-index: 9999;
+    }
+    .nav_hero nav ul li{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        height: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 30px;
+        font-size: 2.5rem;
+
+    }
+    .nav_hero nav ul li a{
+        color: white !important;
+    }
+    .nav_hero nav ul .nav_li_one::before{
+        display: none;
+    }
+    .nav_hero nav ul .cross_white{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .nav_hero nav .logo{
+        height: 60%;
+    }
+
+}
+
+
+/* .thanku */
+
+.thanku{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin: 40px 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.thanku img{
+    width: 30%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.thanku h1{
+    font-weight: 500;
+}
+.thanku p{
+    margin: 10px 0;
+}
+.thanku button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to top, rgba(149, 43, 122, 1),rgba(232, 31, 108, 1));
+    color: white;
+    border-radius: 5px;
+}
+.thanku button a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:1080px) {
+    .thanku img{
+        width: 50%;
+    }
+}
+@media screen and (max-width:715px) {
+    .thanku img{
+        width: 70%;
+    }
+}
+@media screen and (max-width:500px) {
+    .thanku img{
+        width: 90%;
+    }
+    .thanku h1{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:350px) {
+    .thanku img{
+        width: 100%;
+    }
+    .thanku h1{
+        font-size: 1.3rem;
+    }
+    .thanku p{
+        font-size: .8rem;
+    }
+}
